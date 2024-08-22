@@ -1,0 +1,1044 @@
+<style>
+    .header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  
+}
+body{
+    background-image:url(andre-alexander-CKyD4ex3hUQ-unsplash.jpg);
+    background-size: cover;
+}
+.formbox{
+    background: rgbd(255,255,255.0.6);
+}
+.header #logo img{}
+    width: 80px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+    color: var(--maincolor);
+
+}
+.header .navbar a:hover{
+   color: black;
+}
+.header .icons{
+    font-size: 2rem;
+   
+}
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: var(--maincolor);
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+.header .search-box.active{
+    right: 2rem;
+}
+.header .navbar.active{
+    left: 0;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bookings- Hotel America</title>
+      <link rel="icon" href="mylogo.png">
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+    <!-- Load Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+    <style>
+        /* Style the booking form */
+        .booking-form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 50px;
+            background: #fff;
+        }
+        .elem-group {
+            /* Add your custom styling here */
+        }
+        /* Add more CSS rules as needed */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" id="logo"><img src="imgaes/mylogo.png" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            
+            <div class="fas fa-user" id="myuser"></div>
+            <div class="fas fa-search" id="serach-bar"></div>
+            <div class="fas fa-bars" id="menu-bars"></div>
+        </div>
+
+        <div class="search-box">
+            <input type="search" placeholder="search here">
+        </div>
+        
+    </header><br><br><br><br><br><br><br>
+    <form class="booking-form" action="#" method="post">
+        <div class="formbox">
+        <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" required>
+        </div>
+        <br>
+        <button type="submit">Book The Rooms</button>
+    </form>
+    </div>
+</body>
+</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url(andre-alexander-CKyD4ex3hUQ-unsplash.jpg);
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+   header {
+        background :rgba(255, 255,255, 0.2) ;
+        color:black;
+        padding: 10px;
+        text-align: center;
+    }
+
+header h1 {
+    margin-bottom: 10px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+    a:hover{
+    background-color: black;
+     color:whitesmoke;
+  }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-info {
+        flex: 1 1 300px;
+        color: rgb(251, 251, 251);
+        margin-right: 2px;
+    }
+    .contact-form {
+        flex: 1 1 300px;
+        color: black ;
+        background :rgba(255, 255,255, 0.2) ;
+    }
+    
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    #subbut:hover{
+         background-color: seagreen;
+    }
+    .contact-form label {
+        margin-bottom: 5px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    .contact-form input[type="submit"] {
+        color: black;
+        cursor: pointer;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top:160px ;
+    }
+    </style>
+    <!DOCTYPE html>
+    <head>
+      <title>Contact Us - Hotel America</title>
+      <link rel="icon" href="mylogo.png">
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <a href="#" id="logo"><img src="imgaes/mylogo.png" alt=""></a>
+                <nav class="navbar">
+                    </nav> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+        </header>
+    
+        <section id="contact">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Main Street,<br>Thousand Lights,Chennai</p>
+                    <p><strong>Phone:</strong> 2345678</p>
+                    <p><strong>Email:</strong> info@hotelamerica.com</p>
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <input id="subbut" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 Hotel  America. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+
+    <style>
+        *{
+          margin: 10pxpx;
+          padding: 10px;
+        }
+        h1{
+            text-align: center;
+    
+        }
+        .header #logo img{}
+        width: 80px;
+    }
+    .header .navbar a{
+        font-size: 1.7rem;
+        margin-left: 1.5rem;
+        color: var(--maincolor);
+    
+    }
+    .header .navbar a:hover{
+       color: black;
+    }
+    .header .icons{
+        font-size: 2rem;
+       
+    }
+    
+    .header .icons div{
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .header .icons div:hover{
+        color: var(--maincolor);
+    }
+    .header .icons #menu-bars{
+        display: none;
+    }
+    .header .search-box{
+        position: absolute;
+        top: 110%;
+        right: 100%;
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .header .search-box input{
+        padding: 1.5rem;
+        border-radius: 15px;
+        width: 100%;
+        border: none;
+    }
+    .header .search-box.active{
+        right: 2rem;
+    }
+    .header .navbar.active{
+        left: 0;
+    }
+    #one,#two,#three,#four,#five,#six,#seven,#eight{
+        width: 220x;
+        height: 220px;
+    }
+    
+    .images{
+        justify-content: center;
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+     <!DOCTYPE html>
+        <head>
+          <title>Booking - Hotel America</title>
+          <link rel="icon" href="mylogo.png">
+        </head>
+    <body style="background-image: url(andre-alexander-CKyD4ex3hUQ-unsplash.jpg);">
+    <h1 style="color: whitesmoke;"><strong>Image Gallery </strong></h1>
+    <header class="header">
+        
+        <a href="#" id="logo"><img src="imgaes/mylogo.png" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+    <center>
+    <div class="images">
+        
+        <div class="inner-award">
+            <img src="imgaes/award1.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award 2.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award 3.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award4.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award5.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award6.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+    </div>
+    </div>
+    </center>
+    </body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotel America</title>
+        <link rel="icon" href="mylogo.png">
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" id="logo"><img src="imgaes/mylogo.png" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="bookings.html">bookings</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <div class="icons">
+            
+            <div class="fas fa-user" id="myuser"></div>
+            <div class="fas fa-search" id="serach-bar"></div>
+            <div class="fas fa-bars" id="menu-bars"></div>
+        </div>
+
+        <div class="search-box">
+            <input type="search" placeholder="search here">
+        </div>
+        
+    </header>
+<!-- background image -->
+
+    <div class="main-background">
+        <div class="main-text">
+            <h2>perfection</h2>
+        <h1>and you are <span>invited</span></h1>
+        </div>
+        
+    </div> 
+    <!-- background image ended -->
+
+<!-- booking secton -->
+<div class="book-section">
+    <div class="inner-book">
+        <input type="text" placeholder="arrival">
+        <input type="text" placeholder="departure">
+        <input type="text" placeholder="choose room">
+        <input type="text" placeholder="state">
+        <div class="book-btn">
+            <a href="#">book now</a>
+        </div>
+    </div>
+    
+</div>
+<!-- booking secton ended -->
+<div class="award-winning-hotel">
+    <h1>award <span>winning</span> hotels</h1>
+    <div class="main-hotel">
+        <div class="inner-award">
+            <img src="imgaes/award1.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award 2.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award 3.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award4.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award5.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+        </div>
+        <div class="inner-award">
+            <img src="imgaes/award6.png" alt="">
+            <h2>middle town</h2>
+            <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+    
+        </div>
+    </div>
+    
+</div>
+<!-- award winning ended -->
+<!-- roomes -->
+   <div class="our-rooms">
+       <h1>Our <span>rooms</span></h1>
+       <div class="inner-rooms">
+           <div class="room-box">
+               <img src="imgaes/award1.png" alt="">
+               <div class="beds">
+                   <span>1 bed</span><i class="fas fa-bed"></i>
+               </div>
+               <div class="book-room-btn">
+                <a href="#" class="book-room">Book now</a>
+            </div>
+           </div>
+
+           <div class="room-box">
+            <img src="imgaes/award1.png" alt="">
+            <div class="beds">
+                <span>1 bed</span><i class="fas fa-bed"></i>
+            </div>
+            <div class="book-room-btn">
+                <a href="#" class="book-room">Book now</a>
+            </div>
+        </div>
+
+        <div class="room-box">
+            <img src="imgaes/award1.png" alt="">
+            <div class="beds">
+                <span>1 bed</span><i class="fas fa-bed"></i>
+            </div>
+           
+                <div class="book-room-btn">
+                    <a href="#" class="book-room">Book now</a>
+                </div>
+   
+            
+        </div>
+       </div>
+   </div>
+
+
+
+<!-- roomes ended -->
+<div class="second-background">
+    <div class="second-text">
+        <h1>winter</h1>
+        <h2>weather</h2>
+    </div>
+</div>
+
+<!-- our gallery -->
+
+<div class="gallery">
+    <h1>Our <span>gallery</span></h1>
+    <div class="main-gallery">
+        <div class="inner-gallery">
+                <img src="imgaes/award1.png" alt="">
+            
+        </div>
+        <div class="inner-gallery">
+            <img src="imgaes/award1.png" alt="">
+           
+        </div>
+        <div class="inner-gallery">
+            <img src="imgaes/award1.png" alt="">
+        </div>
+        <div class="inner-gallery">
+            <img src="imgaes/award1.png" alt="">
+        </div>
+        <div class="inner-gallery">
+            <img src="imgaes/award1.png" alt="">
+        </div>
+        <div class="inner-gallery">
+            <img src="imgaes/award1.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+let search = document.querySelector('#serach-bar');
+let searchbox = document.querySelector('.search-box');
+let menubar = document.querySelector('#menu-bars');
+let mynav = document.querySelector('.navbar');
+
+
+
+
+search.onclick = () =>{
+    searchbox.classList.toggle('active');
+}
+
+menubar.onclick = () =>{
+    menubar.classList.toggle('fa-times')
+    mynav.classList.toggle('active')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let search = document.querySelector('#serach-bar');
+// let searchbox =document.querySelector('.search-box');
+
+// search.onclick = () =>{
+//     searchbox.classList.toggle('active');
+// }
+
+:root{
+    --maincolor:#0000ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear; 
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  
+}
+.header #logo img{
+    width: 80px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+    color: var(--maincolor);
+
+}
+.header .navbar a:hover{
+   color: black;
+}
+.header .icons{
+    font-size: 2rem;
+   
+}
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: var(--maincolor);
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+.header .search-box.active{
+    right: 2rem;
+}
+.header .navbar.active{
+    left: 0;
+}
+
+.main-background{
+    background: url(imgaes/andre-alexander-CKyD4ex3hUQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main-text{
+    text-align: center;
+}
+.main-text h2{
+    color: white;
+    font-size: 30px;
+}
+.main-text h1{
+    color: white;
+    font-size: 38px;
+}
+.main-text h1 span{
+    color: var(--maincolor);
+} 
+.book-section{
+    padding: 2rem 7%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-book{
+    width: 100%;
+    background: black;
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.inner-book input{
+    padding: 1rem 2rem;
+    margin: .5rem 0;
+
+}
+.book-btn{
+    padding: 1.1rem 2rem;
+    background: var(--maincolor);
+
+}
+.book-btn a{
+    color: white;
+    font-size: 1.5rem;
+}
+.main-hotel{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.award-winning-hotel h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem ;
+}
+.award-winning-hotel h1 span{
+    color: var(--maincolor);
+}
+.inner-award{
+    flex: 1 1 300px;
+}
+.inner-award h2,p{
+    text-align: center;
+}
+.inner-award h2{
+    font-size: 30px;
+    padding: 1rem;
+}
+.inner-award p{
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+.inner-award img{
+    width: 100%;
+}
+.our-rooms{
+    padding: 2rem 7%;
+
+}
+.our-rooms h1{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 2rem;
+}
+.our-rooms h1 span{
+    color: var(--maincolor);
+}
+.inner-rooms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-rooms .room-box{
+    flex: 1 1 300px;
+}
+.inner-rooms .room-box img{
+    width: 100%;
+    padding: 1rem;
+}
+.inner-rooms .room-box .beds{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+.inner-rooms .room-box .beds span{
+    font-size: 1.7rem;
+}
+.inner-rooms .room-box .beds i{
+    font-size: 2rem;
+    color: var(--maincolor);
+    cursor: pointer;
+}
+.book-room-btn{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border: 1px solid var(--maincolor);
+    text-align: center;
+}
+.book-room-btn:hover{
+    color: white;
+    background: var(--maincolor);
+}
+.book-room-btn a{
+    color: black;
+    font-size: 1.7rem;
+}
+.book-room-btn a:hover{
+    color: white;
+}
+.second-background{
+    background: url(imgaes/secondback.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-background{
+    text-align: center;
+    
+}
+.second-background h1{
+    font-size: 60px;
+    color: white;
+}
+.second-background h2{
+    color: var(--maincolor);
+    font-size: 35px;
+}
+.gallery{
+    padding: 2rem 7%;
+
+}
+.gallery h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem;
+}
+.gallery h1 span{
+    color: var(--maincolor);
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-gallery img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .inner-gallery {
+  position: relative;
+}
+.inner-gallery:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: blue;
+  width: 100%;
+  height: 100%;
+  opacity: .1;
+  
+}
+.inner-gallery i{
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    color: black;
+    z-index: 10000;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+
+    .header .icons #menu-bars{
+        display: inline-block;
+    }
+    .header{
+        padding:  2rem;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+        background: var(--maincolor);
+
+    }
+    .header .navbar a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 10px;
+    }
+    .book-btn{
+       width: 100%;
+       margin-top: .5rem;
+    
+    }
+    .book-section{
+        padding: 2rem 0;
+    }
+}
